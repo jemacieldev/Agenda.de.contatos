@@ -1,0 +1,111 @@
+/* Estilo geral da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #333;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333; /* Cor de texto igual para todos os campos */
+}
+
+button[type="submit"] {
+    background-color: #2f2c79;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #5752dd;
+}
+
+/* Estilo da tabela de contatos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilo para linhas alternadas na tabela */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para o cabeçalho da tabela */
+thead {
+    background-color: #808080;
+    color: #fff;
+}
+
+/* Estilo para ícones de ação */
+.action-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-icon,
+.delete-icon {
+    font-size: 18px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+    color: #808080;
+}
